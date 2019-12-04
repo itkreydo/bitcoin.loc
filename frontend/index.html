@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://peterolson.github.io/BigInteger.js/BigInteger.min.js"></script>
+        <meta charset="utf-8">
+        <title>Bitcoin</title>
+    </head>
+    <body>
+        <div id ="app">
+            <div class="nav-bar"></div>
+            <h1 class="name">Bitcoin.system</h1>
+            <center>
+                <img src="img/1.png">
+            </center>
+            <h2 style="text-align: center;">Sign in</h2>
+
+            <div class="signIn">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Key</label>
+                    <input v-model="login" name="login" class="form-control"  aria-describedby="emailHelp">
+                </div>
+                <center>
+                    <button v-if= "access"
+                        @click ="enterAction" 
+                        class="btn btn-primary">Sign in</button>
+                </center>
+                
+            </div>
+            <div class="nav-bar2"></div>
+            <h4 style="text-align: center;">Сreate wallet</h4>
+            <div class="signUp">
+                <center>
+                <button v-if= "access"
+                        @click ="key_generation" 
+                        class="btn btn-primary">Сгенерировать ключи</button></center>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Private key</label>
+                    <input v-model="login" name="login" class="form-control"  aria-describedby="emailHelp">
+                </div>
+                
+                 <div class="form-group">
+                    <label for="exampleInputEmail1">Public key</label>
+                    <input v-model="login" name="login" class="form-control"  aria-describedby="emailHelp">
+                </div>
+
+            </div>
+        
+            
+            
+        </div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script> 
+    <script src="js/vue.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        
+    </body>
+</html>

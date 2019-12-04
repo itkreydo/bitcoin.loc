@@ -1,0 +1,43 @@
+body {
+    font-family: tahoma;
+    color: #282828;
+    margin: 0px;
+}
+
+.name {
+    text-align: center;
+    font-family: inherit;
+    font-size: 3em;
+    margin-top: 50px;
+
+}
+
+img {
+    margin: 0 auto;
+}
+
+.nav-bar {
+    background: linear-gradient(-90deg, #fafafa, #211f1f);
+    height: 60px;
+    margin-bottom: 15px;
+}
+.nav-bar2 {
+    background: linear-gradient(-90deg, #fafafa, #211f1f);
+    height: 10px;
+    margin-bottom: 5px;
+    margin: 20px;
+}
+
+.signIn {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 400px;
+}
+
+.signUp {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 400px;
+}
+
+
