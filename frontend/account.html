@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://peterolson.github.io/BigInteger.js/BigInteger.min.js"></script>
+        <meta charset="utf-8">
+        <title>Bitcoin</title>
+    </head>
+    <body>
+        <div id ="app">
+            <div class="nav-bar"></div>
+            <h1 class="name" style="color: darkgray">Welcome, friend!</h1>
+            
+            <div class = "center-block">
+                <div class = "wallet">
+                <h3>Wallet:   {{public_key}} </h3>
+                <h3><p style="color: dimgray">Balance:    </p> {{balance}} </h3>
+                </div>
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-2">
+                        <button v-if= "access"
+                            @click ="syncBlockChain"
+                            class="btn btn-primary">Do Mining</button>
+                    </div>
+                    <div class="col-2">
+                        <button v-if= "access"
+                            @click ="makeTransaction"
+                            class="btn btn-primary">CreateTrans</button>
+                    </div>
+                    <div class="col-4"></div>
+                </div> 
+            </div>
+        </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script> 
+    <script src="js/vue.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        
+    </body>
+</html>
