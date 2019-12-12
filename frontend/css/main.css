@@ -27,7 +27,11 @@ img {
     margin-bottom: 5px;
     margin: 20px;
 }
-
+.form-group {
+    margin: 30px;
+    font-size: 1.3em;
+    color:black;
+}
 .signIn {
     margin: 0 auto;
     margin-top: 20px;
@@ -38,6 +42,21 @@ img {
     margin: 0 auto;
     margin-top: 20px;
     width: 400px;
+}
+
+.center-block {
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 50px;
+}
+
+.wallet {
+    margin: 30px;
+}
+
+.row {
+    margin: 60px;
+    
 }
 
 

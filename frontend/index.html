@@ -34,24 +34,17 @@
             <div class="signUp">
                 <center>
                 <button v-if= "access"
-                        @click ="key_generation" 
+                        @click ="generateKey" 
                         class="btn btn-primary">Сгенерировать ключи</button></center>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Private key</label>
-                    <input v-model="login" name="login" class="form-control"  aria-describedby="emailHelp">
-                </div>
-                
-                 <div class="form-group">
-                    <label for="exampleInputEmail1">Public key</label>
-                    <input v-model="login" name="login" class="form-control"  aria-describedby="emailHelp">
+                    <label for="exampleInputEmail1">Private key:<p>{{private_key}}</p></label>
+                    <label for="exampleInputEmail1">Public key:<p>{{public_key}}</p></label>
                 </div>
 
             </div>
         
-            
-            
         </div>
-        
+    
     <script src="https://cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script> 
     <script src="js/vue.js"></script>
     <script src="js/main.js"></script>
