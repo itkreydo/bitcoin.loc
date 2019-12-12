@@ -11,7 +11,7 @@ var app = new Vue({
     },
     methods: {
         enterAction(){
-            window.location.href = "account.php";
+            window.location.href = "account.html";
             
         }, 
         
